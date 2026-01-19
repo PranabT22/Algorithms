@@ -1,0 +1,150 @@
+# Question 1 
+# Given the array
+# [4, 8, 6, 2]
+# Perform a linear search to find the value 4.
+# State the index where the value is found.
+
+numbers = [4, 8,6,2]
+for index, number in enumerate(numbers):
+  if number == 4:
+  	print(f"Found {number} in:\nIndex found:{index}")
+
+
+# Question 2
+# Given the array
+# [10, 20, 30, 40]
+# Perform a linear search for 30.
+# How many comparisons are made before the value is found?
+
+numbers = [10,20,30,40]
+for index, number in enumerate(numbers):
+  if number == 30:
+  	print(f"Found {number}:\nComparison made before finding value found:{index}")
+
+
+# Question 3 
+
+# Given the array
+# [5, 3, 7, 1, 9]
+# Perform a linear search for 1.
+# List the elements checked in order and state the index where the value is found.
+
+numbers = [5,3,7,1,9]
+for index, number in enumerate(numbers):
+  if number == 1:
+  	print(f"{number} found in Index:{index}")
+  else:
+    print(f"Number not found in Index:{index}")
+   
+
+# Question 4 
+
+# Given the array
+# [2, 4, 6, 8, 10]
+# Perform a linear search for 10.
+# State:
+# the elements checked
+# the total number of comparisons made
+
+numbers = [2, 4, 6, 8, 10]
+comparison_count = 0
+for index, number in enumerate(numbers):
+    comparison_count += 1
+    print(f"Element Checked: {number}")
+    if number == 10:
+        print(f"{number} found at index {index}")
+        break
+print(f"Total comparisons made: {comparison_count}")
+
+
+# Question 5 
+
+# Given the array
+# [7, 14, 21, 28, 35]
+# Perform a linear search for 21.
+# Show each comparison and state the index returned.
+
+numbers = [7, 14, 21, 28, 35]
+comparison_count = 0
+for index, number in enumerate(numbers):
+    comparison_count += 1
+    if number == 21:
+        print(f"{number} found in Index:{comparison_count}")
+        break
+    else:
+         print(f"Comparison {comparison_count} returned {number}\nElement Checked:{index}")
+            
+# Question 6 
+
+# Given the array
+# [1, 3, 5, 7, 9, 11]
+# Perform a linear search for 8.
+# List all elements checked and state the result of the search.
+
+numbers = [1, 3, 5, 7, 9, 11]
+comparison_count = 0
+for index, number in enumerate(numbers):
+    comparison_count += 1
+    if number == 8:
+        print(f"{number} found in Index:{comparison_count}")
+        break
+    else:
+         print(f"Comparison {comparison_count} returned {number}\nElement Checked:{index}")
+
+# Question 7 
+
+# Given the array
+# [4, 6, 4, 6, 4, 6, 4, 6, 4, 6, 4, 6]
+# Perform a linear search for 6.
+# Show all comparisons until the search stops and state the index returned.
+
+numbers = [4, 6, 4, 6, 4, 6, 4, 6, 4, 6, 4, 6]
+comparison_count = 0
+for index, number in enumerate(numbers):
+    comparison_count += 1
+    if number == 6:
+        print(f"{number} found in Index:{index}")
+    else:
+         print(f"Comparison {comparison_count} returned {number}\nElement Checked:{index}")
+
+            
+# Question 8 
+
+# Given the array
+# [12, 9, 15, 9, 18, 9]
+# Perform a linear search for 9.
+# Indicate:
+
+# the order of elements checked
+
+# the index where the value is first found
+
+numbers = [12, 9, 15, 9, 18, 9]
+comparison_count = 0
+for index, number in enumerate(numbers):
+    comparison_count += 1
+    if number == 9:
+        print(f"{number} found in Index:{index}")
+    else:
+         print(f"Comparison {comparison_count} returned {number}\nElement Checked:{index}")
+            
+# Question 9
+
+# Given the array
+# [3, 6, 9, 12, 15, 18, 21, 24]
+# Perform a linear search for 21.
+# You must:
+
+# show each comparison in order
+
+# state the index returned
+numbers = [3, 6, 9, 12, 15, 18, 21, 24]
+comparison_count = 0
+for index, number in enumerate(numbers):
+    comparison_count += 1
+    if number == 21:
+        print(f"{number} found in Index:{index}")
+        break
+    else:
+         print(f"Comparison {comparison_count} returned {number}\nElement Checked:{index}")
+            
