@@ -1,0 +1,293 @@
+🟢 EASY (1–5): Learn the Core Mechanism
+1. Basic Insertion Sort Implementation
+
+You are given an unsorted array of integers.
+
+Write a program to sort the array in ascending order using Insertion Sort.
+
+Rules:
+
+Do not use built-in sorting functions
+
+Insert each element into its correct position in the already sorted part of the array
+
+Output the sorted array
+
+2. Insertion Sort in Descending Order
+
+Given an array of integers, modify the insertion sort logic to sort the array in descending order.
+
+Think About:
+
+How the comparison condition changes
+
+Whether shifting logic differs
+
+3. Count Comparisons and Shifts
+
+Sort an array using insertion sort and report:
+
+Total number of comparisons
+
+Total number of element shifts
+
+This helps analyze insertion sort behavior on different inputs.
+
+4. Detect If the Array Is Already Sorted
+
+Before sorting, check whether the array is already sorted.
+
+If it is:
+
+Return the array immediately
+
+Avoid unnecessary shifts and comparisons
+
+5. Print Array After Each Insertion
+
+Perform insertion sort and print the state of the array after each insertion step.
+
+Goal:
+
+Understand how the sorted portion grows over time
+
+🟡 MEDIUM (6–14): Variants & Optimization Thinking
+6. Optimized Insertion Sort Using Binary Search
+
+Instead of linearly searching for the insertion position, use binary search to find where the current element should be inserted.
+
+Requirements:
+
+Use binary search only to find position
+
+Still shift elements manually
+
+7. Sorting Strings with Insertion Sort
+
+You are given an array of strings.
+
+Sort them in lexicographical order using insertion sort.
+
+Edge Cases:
+
+Uppercase vs lowercase
+
+Empty strings
+
+8. Sorting Custom Objects (Stable Sort)
+
+You are given a list of employees with:
+
+employeeId
+
+salary
+
+Sort employees by salary in ascending order using insertion sort.
+
+If two employees have the same salary, preserve their original relative order.
+
+9. Sorting a Nearly Sorted Array
+
+An array is nearly sorted such that each element is at most one position away from its correct position.
+
+Use insertion sort to efficiently sort the array and explain why it performs well here.
+
+10. Find K Smallest Elements
+
+Without fully sorting the array, use insertion sort logic to find the k smallest elements.
+
+Restriction:
+
+Do not use additional data structures
+
+11. Insertion Sort on Linked Lists
+
+Implement insertion sort on a singly linked list.
+
+Constraints:
+
+Do not convert the list to an array
+
+Insert nodes into the correct position
+
+12. Sorting Based on Custom Priority
+
+Given an array of integers and a priority value x, sort the array such that:
+
+Elements closer to x come first
+
+If two elements are equally distant, keep their original order
+
+Use insertion sort.
+
+13. Partial Sorting
+
+Given an array and an integer k, perform insertion sort for only the first k elements, assuming the rest of the array is unsorted.
+
+Output the resulting array.
+
+14. Online Insertion Sort
+
+Numbers arrive one by one in a stream.
+
+After each insertion:
+
+Maintain the array in sorted order using insertion sort logic
+
+Output the current sorted state
+
+🔴 TOP INTERVIEW LEVEL (15–30): TikTok / Microsoft / AWS Style
+
+These questions focus on when and why insertion sort is used, not just how.
+
+15. Decide When Insertion Sort Is Optimal
+
+You are given:
+
+Array size
+
+Estimated disorder level (number of inversions)
+
+Write a program that:
+
+Chooses insertion sort if it is optimal
+
+Otherwise suggests another sorting algorithm
+
+Explain the decision through code comments.
+
+16. Compare Insertion Sort vs Merge Sort
+
+Given arrays of varying sizes and disorder levels:
+
+Sort them using insertion sort
+
+Sort them using merge sort
+
+Compare execution time and operations count
+
+Analyze when insertion sort outperforms merge sort.
+
+17. Minimum Shifts Required to Sort
+
+Using insertion sort logic, compute the minimum number of shifts required to sort the array.
+
+Do not actually sort the array completely.
+
+(Microsoft-style analytical question)
+
+18. Stability Proof Through Code
+
+Given records with:
+
+timestamp
+
+value
+
+Sort them using insertion sort by value.
+
+Write code that verifies insertion sort’s stability.
+
+19. Sorting a Continuous Data Stream
+
+You are receiving data continuously and must keep it sorted at all times.
+
+Constraints:
+
+Limited memory
+
+Frequent small updates
+
+Implement an insertion sort–based solution and justify its suitability.
+
+(AWS streaming systems question)
+
+20. Insertion Sort with Costly Writes
+
+Each write operation is expensive.
+
+Modify insertion sort to minimize write operations, even if comparisons increase.
+
+(Microsoft systems-level question)
+
+21. Sorting with Read-Only Comparison
+
+You can compare elements but can only move them using shift operations, not swaps.
+
+Implement insertion sort under this constraint.
+
+22. Worst-Case Input Constructor
+
+Write a program that generates an input array of size n that causes insertion sort to perform the maximum number of shifts.
+
+Explain why this input is worst-case.
+
+23. Hybrid Sorting System
+
+Implement a sorting system where:
+
+Insertion sort is used for small subarrays
+
+Another algorithm is used for large arrays
+
+This mimics real-world standard library implementations.
+
+24. Sorting Nearly Sorted Logs
+
+You are given log entries that are almost sorted by timestamp.
+
+Use insertion sort to efficiently reorder them.
+
+Explain why insertion sort is ideal here.
+
+(AWS-style practical question)
+
+25. Insertion Sort for Memory-Constrained Devices
+
+You are working on a low-memory embedded device.
+
+Implement insertion sort and justify:
+
+Space usage
+
+Predictable performance
+
+26. Parallel Insertion Sort Feasibility
+
+Analyze whether insertion sort can be parallelized.
+
+If partially possible:
+
+Implement a limited parallel version
+
+Otherwise, explain why not
+
+27. Sorting with Restricted Moves
+
+You are only allowed to move an element one position at a time.
+
+Implement insertion sort under this restriction and analyze the cost.
+
+28. Detecting Insertion Sort from Execution Trace
+
+You are given intermediate states of an array during sorting.
+
+Determine whether these states could have been produced by insertion sort.
+
+29. Recover Original Array
+
+You are given the array after k insertion steps.
+
+Determine whether it is possible to reconstruct the original array.
+
+(TikTok-style reverse-engineering question)
+
+30. Prove Insertion Sort Correctness via Invariants
+
+Write a program that:
+
+Demonstrates loop invariants of insertion sort
+
+Prints why the sorted portion remains sorted after every step
+
+(Theory + implementation interview question)
